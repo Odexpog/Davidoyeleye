@@ -104,7 +104,7 @@ function Home() {
     <div className="home-page">
       {/* Hero Section */}
       <header className="hero-section">
-        <video src="/dolaVid.mp4" autoPlay loop muted playsInline className="hero-video-bg"></video>
+        <video src="https://res.cloudinary.com/dckxlcwpr/video/upload/f_auto,q_auto/v1782060020/dolaVid_rba19k.mp4" autoPlay loop muted playsInline className="hero-video-bg"></video>
         <div className="hero-overlay"></div>
         <div className="hero-content container text-center animate-fade-in">
           <h1 className="hero-title">
