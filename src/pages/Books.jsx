@@ -775,6 +775,9 @@ const styleStyles = (
     }
 
     @media (max-width: 768px) {
+      .hero-subtext {
+        display: none;
+      }
       .hero-main-title {
         font-size: 2.2rem;
       }
