@@ -127,6 +127,11 @@ function Books() {
         <div className="hero-gradient-overlay"></div>
         <div className="container">
           <div className="books-hero-text">
+            {/* Mobile-only featured headshot */}
+            <div className="mobile-hero-avatar-wrapper">
+              <img src="/david.webp" alt="David Oyeleye" className="mobile-hero-avatar" />
+            </div>
+
             <h1 className="hero-main-title">
               Knowledge Is The Baseline For <br className="desktop-break" />
               <span className="text-secondary">Personal Transformation</span> <br />
@@ -412,6 +417,9 @@ const styleStyles = (
       height: 100%;
       background: linear-gradient(to bottom, rgba(5, 9, 57, 0.4) 0%, rgba(5, 9, 57, 0.8) 100%);
       z-index: 1;
+    }
+    .mobile-hero-avatar-wrapper {
+      display: none;
     }
     .books-hero .container {
       position: relative;
@@ -764,6 +772,29 @@ const styleStyles = (
     }
 
     @media (max-width: 768px) {
+      .books-hero {
+        background-image: url('/hero_books.jpg') !important;
+        background-size: cover !important;
+        background-position: 65% 40% !important;
+        background-repeat: no-repeat !important;
+        background-color: #050939 !important;
+        padding: 22rem 1rem 3rem !important;
+        text-align: center;
+      }
+      .hero-gradient-overlay {
+        display: block !important;
+        background: linear-gradient(to bottom, rgba(5, 9, 57, 0) 10%, rgba(5, 9, 57, 0.6) 45%, rgba(5, 9, 57, 0.9) 70%, rgba(5, 9, 57, 1) 100%) !important;
+        z-index: 1 !important;
+      }
+      .mobile-hero-avatar-wrapper {
+        display: none !important;
+      }
+      .animated-ideas-container {
+        display: none !important;
+      }
+      .hero-actions {
+        justify-content: center;
+      }
       .hero-subtext {
         display: none;
       }
