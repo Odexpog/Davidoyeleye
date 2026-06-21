@@ -10,7 +10,7 @@ function LeadFormModal({ isOpen, onClose, bookTitle }) {
     e.preventDefault();
     if (formData.name && formData.email) {
       // Post lead to Google Sheet Web App API
-      fetch("https://script.google.com/macros/s/AKfycbyp_VAezVK9Eaymp-dQkEf9IQbmhaeJaKW_uAbz-kaCugeHSdAzMnzzF3wSLkuGrKOrSg/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbybNggaJltC0EaS1ci11nJN_uWn6yMygFUCTvxgfsRh2EVy0wFqiPHOc7oG3vVs57rk4g/exec", {
         method: "POST",
         mode: "no-cors",
         body: JSON.stringify({

@@ -5,7 +5,7 @@ This file documents future implementation details that were postponed or earmark
 ## Google Apps Script Integration for Leads Capture (COMPLETED)
 
 Successfully integrated! Newsletter submissions and book sample downloads are wired directly to the Google Sheet Web App API endpoint:
-`https://script.google.com/macros/s/AKfycbyp_VAezVK9Eaymp-dQkEf9IQbmhaeJaKW_uAbz-kaCugeHSdAzMnzzF3wSLkuGrKOrSg/exec`
+`https://script.google.com/macros/s/AKfycbybNggaJltC0EaS1ci11nJN_uWn6yMygFUCTvxgfsRh2EVy0wFqiPHOc7oG3vVs57rk4g/exec`
 
 ## Fix Amazon Book Links
 
