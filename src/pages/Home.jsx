@@ -160,133 +160,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Main Focus Section (Self-Awareness) */}
-      <section className="focus-section section-padding">
-        <div className="container focus-grid">
-          <div className="focus-img-wrapper">
-            <img src="/inkim.png" alt="Self Awareness Book Cover" className="focus-book-img" />
-          </div>
-          <div className="focus-text-wrapper">
-            <h2><span className="text-secondary font-weight-bold">SELF AWARENESS</span> Is VERY Rare Even Amongst The 'Best' Leaders, But It’s The First Step To Real Power & Transformation.</h2>
-            <p className="focus-desc">GET This Book Now & Join the Few Top 1% in the world Who Truly Know Themselves!!</p>
-            <div className="focus-actions">
-              <Link to="/inkim-form" className="btn btn-primary">DOWNLOAD FOR FREE</Link>
-              <a href="https://selar.com/47lr61" target="_blank" rel="noopener noreferrer" className="btn btn-dark">ORDER NOW!</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Clarity / Image section */}
-      <section className="clarity-section">
-        <div className="clarity-banner">
-          <img src="/cla.svg" alt="Abstract Background Grid" className="clarity-bg" />
-          <div className="clarity-content container text-center">
-            <img src="/clarity.jpg" alt="Clarity Campaign Poster" className="clarity-main-img" />
-            <a href="https://calendly.com/growwithcamp/get-clarity" target="_blank" rel="noopener noreferrer" className="btn btn-primary clarity-btn">
-              Book Clarity Now
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Public Speaker Grid */}
-      <section className="speaker-section section-padding">
-        <div className="container">
-          <h2 className="section-title text-center">Public Speaker</h2>
-          <div className="divider"></div>
-          <div className="speaker-grid">
-            <img src="/event1.jpg" alt="David Oyeleye Speaking" className="speaker-img" />
-            <img src="/event2.jpg" alt="David Oyeleye Event" className="speaker-img" />
-          </div>
-        </div>
-      </section>
-
-      {/* Meet Me Section */}
-      <section id="about" className="meet-section section-padding">
-        <div className="container meet-grid">
-          <div className="meet-img-col">
-            <div className="meet-img-frame">
-              <img src="/david.webp" alt="David Oyeleye Profile" className="meet-img" />
-            </div>
-          </div>
-          <div className="meet-text-col">
-            <h2 className="meet-title">MEET ME</h2>
-            <div className="divider divider-left"></div>
-            <h3 className="meet-subtitle">I build and interpret dreams for kings. Yours can be next!</h3>
-            <p className="meet-para" style={{ fontWeight: '500' }}>
-              Imagine your dream as a house, a unique architectural design that embodies your aspirations and potentials. Like the intricate step by step process of building a house from scratch into a beautiful home, my life's work is all about helping you to create, build and transform your dreams into reality.
-            </p>
-            
-            {showFullProfile && (
-              <div className="meet-collapsible-content animate-fade-in">
-                <p className="meet-para">
-                  But it's one thing to have a dream and vision in your heart, but it's another to know how to masterfully bring it to life. Just like a well-built home, your dreams require thoughtful planning, effort, and nurturing to become a reality. Unfortunately, not everyone can do that and this is where many visionaries get stuck and that's where I come in.
-                </p>
-                <p className="meet-para">
-                  Maybe what you are thinking right now is "David, all I have right now is just a rough sketch, fuzzy, full of scattered details, maybe even a bit of confusing ideas". Don't worry! Now, picture that same rough sketch being conceptualized into an unbelievable masterpiece, a reality so beautiful you have always wanted and surpasses even your wildest expectations. That's literally what I do and I'm damn good at it.
-                </p>
-                <p className="meet-para">
-                  Whether you're just beginning or already building, I'm here to help you. Let's bring your dream to life—together.
-                </p>
-              </div>
-            )}
-            
-            <div className="meet-action" style={{ marginTop: '1.5rem' }}>
-              <button 
-                onClick={() => setShowFullProfile(!showFullProfile)} 
-                className="btn btn-primary"
-              >
-                {showFullProfile ? 'HIDE FULL PROFILE' : 'SEE MY FULL PROFILE'}
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Grid */}
-      <section id="serveYou" className="services-section section-padding">
-        <div className="container">
-          <div className="text-center">
-            <h2 className="section-title">What Dream Do You Want To Interpret Today?</h2>
-            <div className="divider"></div>
-          </div>
-          <div className="services-grid">
-            <div className="service-card">
-              <h3 className="service-title">Training & Speaking</h3>
-              <p className="service-desc">
-                I elevate the thinking of individuals and corporate organizations through my transformative training programme. My teachings and training sessions are designed to provoke all round transformation.
-              </p>
-              <a href="http://bit.ly/invitedavidoyeleye" target="_blank" rel="noopener noreferrer" className="btn btn-dark service-btn">Book me to train</a>
-            </div>
-
-            <div className="service-card active">
-              <h3 className="service-title">Courses & Coaching</h3>
-              <p className="service-desc">
-                From understanding your purpose, gaining clarity about your life, career or business to building a strong personal brand or increasing your productivity, I can work closely with you to become the best version of yourself.
-              </p>
-              <a href="https://selar.co/955741" target="_blank" rel="noopener noreferrer" className="btn btn-primary service-btn">Coach me</a>
-            </div>
-
-            <div className="service-card">
-              <h3 className="service-title">Consulting & Business Development</h3>
-              <p className="service-desc">
-                I deploy creative insight, analytic ability, proprietary methodologies, and vision clarification to organizations, individuals and groups to deliver out-of-the-box solutions.
-              </p>
-              <a href="mailto:davidoyeleyecompany@gmail.com" className="btn btn-dark service-btn">Book me</a>
-            </div>
-
-            <div className="service-card">
-              <h3 className="service-title">Book Project Consulting</h3>
-              <p className="service-desc">
-                Thinking of writing and publishing a book? I help speakers, pastors, first time authors, coaches and thought leaders to become published authors and market their storytelling.
-              </p>
-              <a href="https://kontenthome.com.ng/" target="_blank" rel="noopener noreferrer" className="btn btn-dark service-btn">Work with me</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Get my Books section */}
       <section className="books-pitch-section section-padding">
         <div className="container">
@@ -419,6 +292,135 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* Main Focus Section (The Tomb Was A Womb) */}
+      <section className="focus-section section-padding">
+        <div className="container focus-grid">
+          <div className="focus-img-wrapper">
+            <img src="/tomb.png" alt="The Tomb Was A Womb Book Cover" className="focus-book-img" />
+          </div>
+          <div className="focus-text-wrapper">
+            <h2>The seasons that feel like death are actually the seasons that do the most work. <span className="text-secondary font-weight-bold">THE TOMB WAS A WOMB</span> is the manual for your dark season.</h2>
+            <p className="focus-desc">GET the sample chapter now & discover what happens behind the scenes of your life!!</p>
+            <div className="focus-actions">
+              <button onClick={() => handleOpenModal('The Tomb Was A Womb')} className="btn btn-primary">READ SAMPLE CHAPTER</button>
+              <a href="https://selar.co/m/thedavidoyeleye" target="_blank" rel="noopener noreferrer" className="btn btn-dark">ORDER ON SELAR</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Clarity / Image section */}
+      <section className="clarity-section">
+        <div className="clarity-banner">
+          <img src="/cla.svg" alt="Abstract Background Grid" className="clarity-bg" />
+          <div className="clarity-content container text-center">
+            <img src="/clarity.jpg" alt="Clarity Campaign Poster" className="clarity-main-img" />
+            <a href="https://calendly.com/growwithcamp/get-clarity" target="_blank" rel="noopener noreferrer" className="btn btn-primary clarity-btn">
+              Book Clarity Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Public Speaker Grid */}
+      <section className="speaker-section section-padding">
+        <div className="container">
+          <h2 className="section-title text-center">Public Speaker</h2>
+          <div className="divider"></div>
+          <div className="speaker-grid">
+            <img src="/event1.jpg" alt="David Oyeleye Speaking" className="speaker-img" />
+            <img src="/event2.jpg" alt="David Oyeleye Event" className="speaker-img" />
+          </div>
+        </div>
+      </section>
+
+      {/* Meet Me Section */}
+      <section id="about" className="meet-section section-padding">
+        <div className="container meet-grid">
+          <div className="meet-img-col">
+            <div className="meet-img-frame">
+              <img src="/david.webp" alt="David Oyeleye Profile" className="meet-img" />
+            </div>
+          </div>
+          <div className="meet-text-col">
+            <h2 className="meet-title">MEET ME</h2>
+            <div className="divider divider-left"></div>
+            <h3 className="meet-subtitle">I build and interpret dreams for kings. Yours can be next!</h3>
+            <p className="meet-para" style={{ fontWeight: '500' }}>
+              Imagine your dream as a house, a unique architectural design that embodies your aspirations and potentials. Like the intricate step by step process of building a house from scratch into a beautiful home, my life's work is all about helping you to create, build and transform your dreams into reality.
+            </p>
+            
+            {showFullProfile && (
+              <div className="meet-collapsible-content animate-fade-in">
+                <p className="meet-para">
+                  But it's one thing to have a dream and vision in your heart, but it's another to know how to masterfully bring it to life. Just like a well-built home, your dreams require thoughtful planning, effort, and nurturing to become a reality. Unfortunately, not everyone can do that and this is where many visionaries get stuck and that's where I come in.
+                </p>
+                <p className="meet-para">
+                  Maybe what you are thinking right now is "David, all I have right now is just a rough sketch, fuzzy, full of scattered details, maybe even a bit of confusing ideas". Don't worry! Now, picture that same rough sketch being conceptualized into an unbelievable masterpiece, a reality so beautiful you have always wanted and surpasses even your wildest expectations. That's literally what I do and I'm damn good at it.
+                </p>
+                <p className="meet-para">
+                  Whether you're just beginning or already building, I'm here to help you. Let's bring your dream to life—together.
+                </p>
+              </div>
+            )}
+            
+            <div className="meet-action" style={{ marginTop: '1.5rem' }}>
+              <button 
+                onClick={() => setShowFullProfile(!showFullProfile)} 
+                className="btn btn-primary"
+              >
+                {showFullProfile ? 'HIDE FULL PROFILE' : 'SEE MY FULL PROFILE'}
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Grid */}
+      <section id="serveYou" className="services-section section-padding">
+        <div className="container">
+          <div className="text-center">
+            <h2 className="section-title">What Dream Do You Want To Interpret Today?</h2>
+            <div className="divider"></div>
+          </div>
+          <div className="services-grid">
+            <div className="service-card">
+              <h3 className="service-title">Training & Speaking</h3>
+              <p className="service-desc">
+                I elevate the thinking of individuals and corporate organizations through my transformative training programme. My teachings and training sessions are designed to provoke all round transformation.
+              </p>
+              <a href="http://bit.ly/invitedavidoyeleye" target="_blank" rel="noopener noreferrer" className="btn btn-dark service-btn">Book me to train</a>
+            </div>
+
+            <div className="service-card active">
+              <h3 className="service-title">Courses & Coaching</h3>
+              <p className="service-desc">
+                From understanding your purpose, gaining clarity about your life, career or business to building a strong personal brand or increasing your productivity, I can work closely with you to become the best version of yourself.
+              </p>
+              <a href="https://selar.co/955741" target="_blank" rel="noopener noreferrer" className="btn btn-primary service-btn">Coach me</a>
+            </div>
+
+            <div className="service-card">
+              <h3 className="service-title">Consulting & Business Development</h3>
+              <p className="service-desc">
+                I deploy creative insight, analytic ability, proprietary methodologies, and vision clarification to organizations, individuals and groups to deliver out-of-the-box solutions.
+              </p>
+              <a href="mailto:davidoyeleyecompany@gmail.com" className="btn btn-dark service-btn">Book me</a>
+            </div>
+
+            <div className="service-card">
+              <h3 className="service-title">Book Project Consulting</h3>
+              <p className="service-desc">
+                Thinking of writing and publishing a book? I help speakers, pastors, first time authors, coaches and thought leaders to become published authors and market their storytelling.
+              </p>
+              <a href="https://kontenthome.com.ng/" target="_blank" rel="noopener noreferrer" className="btn btn-dark service-btn">Work with me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Get my Books section moved upwards */}
 
       {/* Testimonials */}
       <section className="testimonials-section section-padding">

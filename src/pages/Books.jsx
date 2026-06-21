@@ -337,17 +337,6 @@ function Books() {
         </div>
       </section>
 
-      {/* Free devotional Callout banner */}
-      <section className="devotional-banner-section text-center">
-        <div className="container">
-          <h2>Equip Devotional &amp; Free Library</h2>
-          <p>Get instant access to free resources and weekly devotional letters to build your capacity.</p>
-          <button className="btn btn-primary" onClick={() => handleOpenModal('Equip Devotional')}>
-            Download Devotional Copy
-          </button>
-        </div>
-      </section>
-
       <section id="all-books" className="showcase-section section-padding">
         <div className="container">
           <h2 className="section-title">Books</h2>
@@ -780,6 +769,13 @@ const styleStyles = (
       }
       .hero-main-title {
         font-size: 2.2rem;
+      }
+      .book-3d {
+        transform: rotateY(-8deg) rotateX(4deg) !important; /* flatter, front-facing for high readability */
+        width: 220px !important;
+        height: 330px !important;
+        margin: 0 auto;
+        box-shadow: 0 15px 30px rgba(5,9,57,0.25) !important;
       }
       .release-grid {
         grid-template-columns: 1fr;
