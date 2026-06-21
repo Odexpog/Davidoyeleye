@@ -86,7 +86,7 @@ function Books() {
       title: "I Never Knew I Was Me",
       img: "/inkim.png",
       orderLink: "https://selar.co/47lr61",
-      freeLink: "/#/inkim-form",
+      freeLink: "/inkim-form",
       desc: "Over the years, I've worked with brilliant leaders across business, corporate, government, and faith-based sectors. Success was visible, yet self-awareness was missing. Self-awareness is arguably the skill of the 21st century. This book is the guide you need to truly meet yourself underneath all the titles and achievements. Not because you need fixing. Because you've never actually met yourself."
     },
     {
