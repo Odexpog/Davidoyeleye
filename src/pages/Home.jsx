@@ -1120,8 +1120,31 @@ const styleStyles = (
     }
     @media (max-width: 768px) {
       .testimonials-list {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1.5rem;
+        padding-bottom: 1.5rem;
+        margin-top: 2rem;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-secondary) rgba(0,0,0,0.05);
+      }
+      .testimonials-list::-webkit-scrollbar {
+        height: 5px;
+      }
+      .testimonials-list::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0.05);
+        border-radius: 3px;
+      }
+      .testimonials-list::-webkit-scrollbar-thumb {
+        background: var(--color-secondary);
+        border-radius: 3px;
+      }
+      .testimonial-card {
+        flex: 0 0 88%;
+        scroll-snap-align: center;
+        box-sizing: border-box;
       }
     }
   `}</style>
