@@ -36,7 +36,8 @@ function InkimForm() {
           height: 100%;
           object-fit: cover;
           opacity: 0.05;
-          z-index: 1;
+          z-index: 0;
+          pointer-events: none; /* Allows clicks to pass through to the form card underneath */
         }
         .form-container {
           position: relative;
@@ -46,10 +47,12 @@ function InkimForm() {
         }
         .form-card {
           background-color: var(--color-white);
-          border-radius: 15px;
+          border-radius: 4px; /* Reduced rounding */
           padding: 3rem;
           box-shadow: var(--shadow-premium);
           border-top: 5px solid var(--color-secondary);
+          position: relative;
+          z-index: 10; /* Forces form card to render on top of the bg overlay */
         }
         .form-title {
           font-size: 2rem;
