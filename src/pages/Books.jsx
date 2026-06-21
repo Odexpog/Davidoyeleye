@@ -1017,6 +1017,48 @@ const styleStyles = (
       .mobile-subtitle {
         display: block;
       }
+      /* Mobile Snap Swipe Carousel for Book Deck */
+      .books-lineup-row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        align-items: center;
+        scroll-snap-type: x mandatory;
+        padding: 3rem 2rem 5rem;
+        gap: 1.8rem;
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+        -webkit-overflow-scrolling: touch;
+      }
+      .books-lineup-row::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Safari/Chrome */
+      }
+      .books-lineup-row::after {
+        bottom: 3.5rem;
+        left: 2rem;
+        width: calc(100% - 4rem);
+      }
+      .interactive-book {
+        flex-shrink: 0;
+        scroll-snap-align: center;
+        opacity: 0.45;
+        transform: scale(0.85);
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+      }
+      .interactive-book:not(:first-child) {
+        margin-left: 0;
+      }
+      .interactive-book.centered-mobile-book {
+        opacity: 1;
+        transform: scale(1.1) translateY(-12px);
+        z-index: 100;
+      }
+      .interactive-book:hover {
+        margin-right: 0;
+      }
+      .mobile-lineup-indicators {
+        display: flex;
+      }
     }
   `}</style>
 );
