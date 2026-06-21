@@ -1,5 +1,13 @@
+/* TEAM */
+/* Developer: Dorocreate */
+/* Site: https://dorocreate.com.ng */
+/* Twitter: @dorocreate */
+/* Location: Nigeria */
+/* >> We are a creative agency helping ambitious brands build the clarity, structure, and digital experiences required to scale.<< */
+
 import React, { useState, useEffect } from 'react';
 import LeadFormModal from '../components/LeadFormModal';
+
 
 function Books() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -144,6 +152,61 @@ function Books() {
         </div>
       </section>
 
+      {/* New Release Section */}
+      <section id="new-release" className="new-release-section section-padding">
+        <div className="container">
+          <span className="badge">NEW RELEASE</span>
+          <h2 className="new-release-heading">The Tomb Was A Womb</h2>
+          <div className="divider divider-left"></div>
+
+          <div className="release-grid">
+            <div className="release-cover-col">
+              <div className="book-cover-3d-wrapper">
+                {/* 3D isometric representation of Tomb Was A Womb */}
+                <div className="book-3d">
+                  <div className="book-3d-front">
+                    <img src="/tomb.png" alt="The Tomb Was A Womb Cover" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }} />
+                  </div>
+                  <div className="book-3d-side"></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="release-details-col">
+              <p className="release-italic">This is a book you won't put down once you read the first line. It's really that good.</p>
+              <div className="release-description">
+                <p>
+                  <strong>The Tomb Was A Womb</strong> makes one simple, life-altering argument: the seasons that feel like death are actually the seasons that do the most work.
+                </p>
+                <p>
+                  Some things only grow in the dark. Some things only form under pressure. And the version of you that's about to walk out of this season? You couldn't have built that person any other way.
+                </p>
+                <p>
+                  This isn't a book that tells you to just "stay positive." It's a book that tells you the whole truth and what happens behind the scenes of our lives: that what you're going through right now isn't just happening to you. It's happening <em>for</em> you.
+                </p>
+                <p>
+                  If you've ever needed to know why what's happening is happening, this is it!
+                </p>
+              </div>
+
+              <div className="release-actions">
+                <div className="purchase-buttons">
+                  <a href="https://selar.co/m/thedavidoyeleye" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                    Order On Selar
+                  </a>
+                  <a href="https://amazon.com" target="_blank" rel="noopener noreferrer" className="btn btn-dark">
+                    Order On Amazon
+                  </a>
+                </div>
+                <button className="btn btn-outline read-sample-btn" onClick={() => handleOpenModal('The Tomb Was A Womb')}>
+                  Read Sample Chapter &darr;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Interactive 3D Book Lineup (Dan Lok reference) */}
       <section className="books-lineup-section">
         <div className="container">
@@ -270,61 +333,6 @@ function Books() {
                 onClick={() => handleDotClick(idx)}
               />
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* New Release Section */}
-      <section id="new-release" className="new-release-section section-padding">
-        <div className="container">
-          <span className="badge">NEW RELEASE</span>
-          <h2 className="new-release-heading">The Tomb Was A Womb</h2>
-          <div className="divider divider-left"></div>
-
-          <div className="release-grid">
-            <div className="release-cover-col">
-              <div className="book-cover-3d-wrapper">
-                {/* 3D isometric representation of Tomb Was A Womb */}
-                <div className="book-3d">
-                  <div className="book-3d-front">
-                    <img src="/tomb.png" alt="The Tomb Was A Womb Cover" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }} />
-                  </div>
-                  <div className="book-3d-side"></div>
-                </div>
-              </div>
-            </div>
-
-            <div className="release-details-col">
-              <p className="release-italic">This is a book you won't put down once you read the first line. It's really that good.</p>
-              <div className="release-description">
-                <p>
-                  <strong>The Tomb Was A Womb</strong> makes one simple, life-altering argument: the seasons that feel like death are actually the seasons that do the most work.
-                </p>
-                <p>
-                  Some things only grow in the dark. Some things only form under pressure. And the version of you that's about to walk out of this season? You couldn't have built that person any other way.
-                </p>
-                <p>
-                  This isn't a book that tells you to just "stay positive." It's a book that tells you the whole truth and what happens behind the scenes of our lives: that what you're going through right now isn't just happening to you. It's happening <em>for</em> you.
-                </p>
-                <p>
-                  If you've ever needed to know why what's happening is happening, this is it!
-                </p>
-              </div>
-
-              <div className="release-actions">
-                <div className="purchase-buttons">
-                  <a href="https://selar.co/m/thedavidoyeleye" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                    Order On Selar
-                  </a>
-                  <a href="https://amazon.com" target="_blank" rel="noopener noreferrer" className="btn btn-dark">
-                    Order On Amazon
-                  </a>
-                </div>
-                <button className="btn btn-outline read-sample-btn" onClick={() => handleOpenModal('The Tomb Was A Womb')}>
-                  Read Sample Chapter &darr;
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </section>

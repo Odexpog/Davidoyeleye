@@ -1,6 +1,14 @@
+/* TEAM */
+/* Developer: Dorocreate */
+/* Site: https://dorocreate.com.ng */
+/* Twitter: @dorocreate */
+/* Location: Nigeria */
+/* >> We are a creative agency helping ambitious brands build the clarity, structure, and digital experiences required to scale.<< */
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import LeadFormModal from '../components/LeadFormModal';
+
 
 function Home() {
   const [showFullProfile, setShowFullProfile] = useState(false);
@@ -133,6 +141,13 @@ function Home() {
               <img key={`logo-2-${idx}`} src={logo} alt="Partner Logo" className="marquee-logo" />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* High-Impact Fullscreen Tagline Banner */}
+      <section className="tagline-showcase-section">
+        <div className="tagline-container">
+          <img src="/kings.jpg" alt="I Build &amp; Interpret Dreams For Kings &amp; Nobles" className="tagline-img" />
         </div>
       </section>
 
@@ -530,6 +545,27 @@ const styleStyles = (
     .marquee-logo:hover {
       opacity: 1;
       transform: scale(1.05);
+    }
+
+    /* High-Impact Tagline Showcase */
+    .tagline-showcase-section {
+      width: 100%;
+      background-color: #0c0a0a; /* Dark background matching the portrait background */
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .tagline-container {
+      width: 100%;
+      max-width: 1920px;
+      margin: 0 auto;
+    }
+    .tagline-img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     /* Quote Banner */
