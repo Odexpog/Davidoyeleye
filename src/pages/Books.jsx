@@ -199,7 +199,7 @@ function Books() {
                   <a href="https://selar.co/m/thedavidoyeleye" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                     Order On Selar
                   </a>
-                  <a href="https://amazon.com" target="_blank" rel="noopener noreferrer" className="btn btn-dark">
+                  <a href="https://www.amazon.com/dp/B0H65NS86W" target="_blank" rel="noopener noreferrer" className="btn btn-dark">
                     Order On Amazon
                   </a>
                 </div>
