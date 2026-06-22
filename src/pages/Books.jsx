@@ -187,10 +187,10 @@ function Books() {
                   Some things only grow in the dark. Some things only form under pressure. And the version of you that's about to walk out of this season? You couldn't have built that person any other way.
                 </p>
                 <p>
-                  This isn't a book that tells you to just "stay positive." It's a book that tells you the whole truth and what happens behind the scenes of our lives: that what you're going through right now isn't just happening to you. It's happening <em>for</em> you.
+                  This isn't a book that tells you to just "stay positive." It's a book that tells you the whole truth and what happens behind the scenes of our lives— that what you're going through right now isn't just happening to you. It's happening <em>for</em> you.
                 </p>
                 <p>
-                  If you've ever needed to know why what's happening is happening, this is it!
+                  If you've ever needed to know why what’s happening is happening, this is it!
                 </p>
               </div>
 
